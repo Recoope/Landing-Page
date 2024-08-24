@@ -4,9 +4,9 @@
 
 ## Funcionalidades
 
-- **Marketplace de recicláveis:** Empresas podem listar e vender seus materiais recicláveis.
+- **Marketplace de recicláveis:** Empresas podem comprar e copperativas de reciclagem podem vender seus materiais.
 - **Facilidade de uso:** Interface simples e intuitiva para facilitar a navegação.
-- **Conexão entre empresas:** Conecta empresas interessadas em comprar e vender recicláveis.
+- **Conexão entre empresas:** Conecta empresas interessadas em comprar com cooperativas interessadas em vender recicláveis.
 
 ## Tecnologias Utilizadas
 
