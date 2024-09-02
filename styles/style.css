@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     height: 200vh;
@@ -86,13 +90,18 @@ header .navigation a:hover{
     margin-bottom: 30px;
 }
 .content .info{
+    left: -30%;
     position: relative;
     right: 100px;
+}
+.content{
+    display: flex;
 }
 .content .info h2 span{
     color: #34A853;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 30px;
 }
 .content .info p{
     font-size: 16px;
@@ -110,6 +119,7 @@ header .navigation a:hover{
     border-radius: 5px;
     transition: 0.3s;
     transition-property: background;
+    
 }
 .content .info-btn:hover{
     background:#363636;
@@ -199,9 +209,13 @@ ul li.active a{
     background-size: cover;
     background-position: center;
     min-height: 100px; 
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../components/images/Untitled\ design\ \(1\).jpg);
+    background-color: #50A343;
     padding: 6rem 2rem;
     
+}
+.login{
+    color: white;
+    background-color: #34A853;
 }
 
 .explore_container {
@@ -226,7 +240,7 @@ ul li.active a{
 
 .explore_card {
     padding: 2rem;
-    background-color: 	#363636;
+    background-color: 	white;
     border: 2px solid transparent;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -234,8 +248,8 @@ ul li.active a{
 }
 
 .explore_card:hover {
-    background-color: #1c1c1e;
-    border-color: #34A853;
+    background-color: #eeeeee;
+    border-color: greenyellow;
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
@@ -255,13 +269,13 @@ ul li.active a{
     margin-bottom: 0.75rem;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #ffffff;
+    color: black;
     transition: color 0.3s ease;
 }
 
 .explore_card p {
     margin-bottom: 0.8rem;
-    color: #cccccc;
+    color: black;
     line-height: 1.6;
     font-size: 0.9rem;
     transition: color 0.3s ease;
@@ -270,18 +284,18 @@ ul li.active a{
 .explore_card a {
     display: inline-block;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 600;
-    color: white;
+    color: black;
     background-color: transparent;
-    border: 2px solid white;
-    border-radius: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .explore_card a:hover {
-    color: #1c1c1e;
-    background-color: white;
+    color: #cccccc;
+    background-color: black;
 }
 .class_container{
     top: -90px;
@@ -291,7 +305,7 @@ ul li.active a{
 }
 .class_image2{
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
 }
 .class_image .class_image1{
     position: absolute;
@@ -302,9 +316,9 @@ ul li.active a{
 }
 .class_image .class_image2{
     position: relative;
-    left: 30%;
+    left: 39%;
     bottom: 1px;
-    max-width: 350px;
+    max-width: 300px;
     border-radius: 10px;
 }
 .class_content{
@@ -401,17 +415,21 @@ a{
     flex-direction: column;
     background-color: white;
     margin: 10px 4px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 2);
+    box-shadow: 0px px 10px rgba(0, 0, 0, 2);
     border: 3px solid transparent;
+    transition: all ease 0.3s;
     
 }
 .card h2{
     margin-bottom: 12px;
     font-weight: 400;
     text-align: center;
+    font-size: 19px;
 }
 .card p{
     color: #363636;
+    text-align: center;
+
 }
 .card i{
     display: flex;
@@ -425,7 +443,7 @@ a{
     
 }
 .card:hover{
-    background-color: #cccccc;
+    
     background-size: cover;
     transform: translateY(-10px);
     transition: all ease 0.3s;
@@ -465,6 +483,7 @@ a{
     margin-bottom: 20px;
 }
 input, textarea{
+    font-family: 'Poppins';
     width: 100%;
     padding: 12px;
     border-radius: 8px;
@@ -473,9 +492,12 @@ input, textarea{
     color: black;
 }
 textarea:focus{
-    font-family: 'Poppins';
+    
     outline: none;
-    box-shadow: 0 0 8px black;
+    
+}
+.content img{
+    height: 65vh;
 }
 button{
     color: white;
@@ -512,3 +534,4 @@ button:hover{
 .info-btn:hover{
     background-color: #363636;
 }
+
