@@ -13,16 +13,16 @@
 
 <body>
     <section>
-        <header>
+        <header id="header1">
             
-            <a href="logo" class="logo"><img class="logo" src="/components/images/Logo impresa 1 (10).jpg" alt=""></a>
+            <a href="logo" class="logo"><img class="logo" src="/components/images/Logo_impresa_1__10_-removebg-preview.png" alt=""></a>
 
             <div class="navigation">
                 <a href="#" class="active">Inicio</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#informacoes">Informações</a>
+                <a href="#sobre">Informações</a>
+                <a href="#sobrenos">Sobre nós</a>
                 <a href="#servicos">Serviços</a>
-                <a href="#contato">Contato</a>
+                <a href="#footer">Contato</a>
                 <a class="login" href="" >Login</a>
             </div>
         </header>
@@ -31,10 +31,13 @@
                 <h2>Leilões de Recicláveis <br><span>Compre ou Venda Materiais</span></h2>
                 <p>Negocie materiais recicláveis de forma simples e sustentável em nossos leilões.</p>
 
-                <a class="info-btn" href="info-btn">Mais Informações</a>
+                <a class="info-btn" href="info-btn">Comece agora</a>
 
             </div>
-            <img src="/components/images/logo101.png" alt="">
+            <img src="/components/images/logo101.png" alt="" id="logoCelular">
+
+        <div class="celular">
+        </div>
         </div>
     </section>
     <header id="header2">
@@ -43,48 +46,41 @@
             <div class="explore_grid">
                 <div class="explore_card">
                     <span><i class="ri-boxing-fill"></i></span>
-                    <h4>1. O Que São Leilões de Materiais Recicláveis?</h4>
-                    <p>Eventos onde materiais recicláveis como papel, plástico, metal e vidro são vendidos a compradores
-                        interessados em reutilizá-los</p>
+                    <h4>1. Porque oferecemos uma plataforma confiável.</h4>
+                    <p>O Recoope garante segurança e transparência em todos os leilões, proporcionando confiança aos participantes.</p>
                     <a href="#">Comece agora <i class="ri-arrow-right-line"></i></a>
                 </div>
                 <div class="explore_card">
                     <span><i class="ri-boxing-fill"></i></span>
-                    <h4>2. Vantagens Ambientais e Econômicas</h4>
-                    <p>Contribuem para a economia circular, reduzem resíduos em aterros e oferecem materiais a preços
-                        reduzidos para empresas e empreendedores.</p>
+                    <h4>2. Porque promovemos a sustentabilidade.</h4>
+                    <p>Participar de leilões de materiais recicláveis ajuda a reduzir o desperdício e a promover a economia circular.</p>
                     <a href="#">Comece agora <i class="ri-arrow-right-line"></i></a>
                 </div>
                 <div class="explore_card">
                     <span><i class="ri-boxing-fill"></i></span>
-                    <h4>3. Como Funciona o Leilão?</h4>
-                    <p>Materiais são listados em plataformas online ou em eventos presenciais. Compradores fazem lances
-                        e o maior lance leva o material, com responsabilidade pelo transporte e processamento.</p>
+                    <h4>3. Porque facilitamos o acesso a materiais.</h4>
+                    <p>Nossos leilões oferecem a oportunidade de adquirir materiais recicláveis a preços acessíveis, beneficiando empresas e empreendedores.</p>
                     <a href="#">Comece agora <i class="ri-arrow-right-line"></i></a>
                 </div>
                 <div class="explore_card">
                     <span><i class="ri-boxing-fill"></i></span>
-                    <h4>4. Quem Pode Participar?</h4>
-                    <p>Abertos a empresas de reciclagem, indústrias e empreendedores interessados em obter materiais
-                        recicláveis e apoiar a sustentabilidade.</p>
+                    <h4>4. Porque você faz parte de uma comunidade.</h4>
+                    <p>Ao se envolver com o Recoope, você se junta a uma rede que apoia práticas sustentáveis e a reciclagem, contribuindo para um futuro melhor.</p>
                     <a href="#">comece agora <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
         </div>
     </header>
-    <br><br><br><br><br>
-    <section class="section_container class_container"id="informacoes">
-        <div class="class_image" >
-            <img src="components/images/Logo impresa 1.png" alt=""
-                class="class_image2">
-        </div>
-        <div class="class_content">
-            <h2 class="section_header">Sobre nós</h2>
-            <p>
-                Nós da empresa SustenJutos somos estudantes da escola germinare do instituto J&F, nosso objeito é trazer a sustentabilidade para o planeta melhorando a gestão de resíduos solidos
+    
+    <section class="about-section" id="sobrenos">
+        <div class="about-content">
+            <h2>Sobre nós da Empresa SustenJuntos</h2>
+            <p>Somos a SustenJuntos, alunos do Instituto J&F, focados na ODS 11. Criamos soluções sustentáveis para resíduos sólidos, ajudando a construir cidades mais limpas e verdes.
+
             </p>
-            <a href="#" class="info-btn">Conhecer</a>
+            <a href="#" class="btn-about">Veja nosso trabalho</a>
         </div>
+        
     </section>
     <header id="header3">
         <div class="wrapper" id="servicos">
@@ -125,34 +121,56 @@
         </div>
     </header>   
     <br>
-    <section class="contact" id="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-wrapper">
-                <div class="contact-frm">
-                    <h3>Envie sua Mensagem</h3>
-                    <br>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Seu nome">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Seu E-mail">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="menssage" placeholder="Sua Mensagem"></textarea>
-                        </div>
-                        <button type="submit">Enviar Mensagem</button>
-                    </form>
+    
+    <footer id="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>                        
+                    </ul>
                 </div>
-                <div class="contact-info">
-                    <h3>Informações de Contato</h3>
-                    <p><i class='bx bxs-phone'></i>55+ 11982131</p>
-                    <p><i class='bx bxs-envelope'></i>sustenjuntos@gmail.com</p>
-                    <p><i class='bx bxs-map' ></i>Rua jose pinto</p>
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+
+                    </ul>
+                </div>
+               
+                <div class="footer-col">
+                    <h4>Informações de Contato</h4>
+                    <div class="contact-info">
+                        <p><i class='bx bxs-phone'></i>55+ 11982131</p>
+                        <p><i class='bx bxs-envelope'></i>sustenjuntos@gmail.com</p>
+                        <p><i class='bx bxs-map' ></i>Rua jose pinto</p>
+                    </div>
+
+                    
+                </div>
+            
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <textarea name="menssage" id="" placeholder="Sua Mensagem"></textarea>
+                            <button>Enviar Mensagem</button>
+                        </form>
+                    </div>
+
+                    <div class="medias-socias">
+                        <a href="#"> <i class="bx bxl-facebook"></i> </a>
+                        <a href="#"> <i class="bx bxl-instagram"></i> </a>
+                        <a href="#"> <i class="bx bxl-linkedin"></i> </a>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
