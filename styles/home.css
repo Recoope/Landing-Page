@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+}
+
+:root {
+    --bg-color: #FAF8F8;
+    --text-color: #212121;
+}
+
+body.dark-theme {
+    --bg-color: #212121;
+    --text-color: #4EB369;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#head {
+    width: 100%;
+    background-color: darken(#FAF8F8, 4%);
+    color: #4B4848;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1.25s ease-in-out;
+    position: fixed;
+}
+
+header {
+    background-color: #4EB369;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 271px;
+    height: 89px;
+    padding-left: 2%;
+    padding-bottom: 0.4%;
+    cursor: pointer;
+}
+
+#iconUser {
+    height: 60%;
+    padding-right: 5%;
+}
+
+/* Estilo para o botão de alternância de tema */
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.field-container {
+    width: 220px;
+    height: 40px;
+}
+
+.field {
+    border: 0;
+    width: 200px;
+    height: 20px;
+    padding: 10px 20px;
+}
+
+.field:focus {
+    outline: none;
+    box-shadow: 0px 9px 20px rgba(#4B4848, 0.3);
+}
+
+.search {
+    padding-left: 45%;
+}
+
+main {
+    padding-top: 100px;
+}
+
+#graphics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 70px;
+    padding-bottom: 30px;
+}
+
+.title {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+#theme-icon{
+    width: 43px;
+    margin-right: 40px;
+}
+
+@media (max-width: 1400px) {
+    #logo {
+        width: 271px;
+        height: 89px;
+        padding-left: 2%;
+        padding-bottom: 0.4%;
+    }
+
+    #iconUser {
+        height: 60%;
+        padding-right: 5%;
+    }
+
+    .search {
+        padding-left: 25%;
+    }
+}
+
+@media (max-width: 880px) {
+    #logo {
+        width: 271px;
+        height: 89px;
+        padding-left: 2%;
+        padding-bottom: 0.4%;
+    }
+
+    #iconUser {
+        height: 60%;
+        padding-right: 5%;
+    }
+
+    .search {
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 750px) {
+    .search {
+        padding-left: 0%;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 0%;
+    }
+}
