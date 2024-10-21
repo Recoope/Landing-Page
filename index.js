@@ -44,3 +44,4 @@ toggleButton.addEventListener("click", () => {
         localStorage.setItem('tema', './components/images/theme_dark.png');
     }
 });
+

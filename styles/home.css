@@ -102,7 +102,7 @@ main {
     font-size: 30px;
 }
 
-#theme-icon{
+#theme-icon {
     width: 43px;
     margin-right: 40px;
 }
@@ -157,5 +157,63 @@ main {
 
     #logo {
         width: 0%;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #logo {
+        width: 150px;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .search {
+        display: none;
+    }
+
+    #theme-toggle {
+        display: none;
+    }
+
+    .iframe-desktop {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+        height: 700px;
+        border: none;
+    }
+
+    #graphics {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: -20px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    #theme-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 450px) {
+    .iframe-mobile {
+        display: none;
+    }
+
+    .iframe-desktop {
+        display: block;
     }
 }
