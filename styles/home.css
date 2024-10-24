@@ -208,12 +208,29 @@ main {
     }
 }
 
-@media (min-width: 450px) {
-    .iframe-mobile {
+/* Para celulares, esconder o iframe desktop */
+@media (max-width: 480px) {
+    .iframe-desktop {
         display: none;
     }
 
+    .iframe-mobile {
+        display: block;
+        width: 100%;
+        height: 700px;
+        border: none;
+    }
+}
+
+@media (min-width: 481px) {
+    .iframe-mobile {
+        display: none;
+    }
+ 
     .iframe-desktop {
         display: block;
+        width: 75%;
+        height: 700px;
+        border: none;
     }
 }
