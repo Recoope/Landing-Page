@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/loginAreRestrita.css">
+    <script src="./index.js" defer></script>
+    <title>Recoope</title>
+    <link rel="shortcut icon" href="../assets/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <main class="container">
+        <img id="logo" src="./components/images/logoRecoope.png" alt="Logo da Recoope">
+        <img id="imageLoginPage" src="./components/images/backgroundLogin.png" alt="imageLoginPage">
+        <div id="infoLogin">
+            <h1 id="FazerLogin">Fazer Login</h1>
+            <form id="form" onsubmit="event.preventDefault()">
+                <div class="single-input">
+                    <input type="text" class="input" id="email" required>
+                    <label for="email">Endereço De E-Mail ou CNPJ</label>
+                </div>
+                <div class="single-input">
+                    <input type="password" class="input" id="senha" required>
+                    <label for="senha">Senha</label>
+                </div>                
+                <div class="container">
+                    <input type="submit" value="Logar" id="submitButton" onclick="login(email, senha)">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
