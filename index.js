@@ -1,19 +1,4 @@
-const searchInput = document.querySelector('.search input');
 const graphicsDivs = document.querySelectorAll('#graphics > div');
-
-searchInput.addEventListener('input', function () {
-    const searchTerm = searchInput.value.toLowerCase().trim();
-
-    graphicsDivs.forEach(function (div) {
-        const title = div.querySelector('h1').textContent.toLowerCase();
-
-        if (title.includes(searchTerm)) {
-            div.style.display = "block";
-        } else {
-            div.style.display = "none";
-        }
-    });
-});
 
 document.getElementById("logo").addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -23,6 +8,7 @@ const body = document.getElementById('body');
 const toggleButton = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 
+// LocalStorage
 const temaSalvo = localStorage.getItem('tema');
 if (temaSalvo) {
     themeIcon.src = temaSalvo;
@@ -45,8 +31,9 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
+// Login Area Restrita
 function login(emailInput, passwordInput) {
-    const baseUrl = 'http://ec2-44-194-250-226.compute-1.amazonaws.com:8080';
+    const baseUrl = 'https://recoopeapi.onrender.com';
     const url = baseUrl + '/login';
 
     const data = {
@@ -68,6 +55,7 @@ function login(emailInput, passwordInput) {
         if (response.status === 200) {
             return response.json();
         } else {
+            window.alert(JSON.stringify(response));
             throw new Error(`Erro na requisição: ${response.status}`);
         }
     })
@@ -77,6 +65,6 @@ function login(emailInput, passwordInput) {
     })
     .catch(error => {
         console.error('Houve um problema com a requisição:', error);
-        window.alert("Credenciais incorretas")
+        window.alert("Credenciais incorretas: " + JSON.stringify(error));
     });
 }

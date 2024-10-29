@@ -62,27 +62,6 @@ header {
     margin-right: 20px;
 }
 
-.field-container {
-    width: 220px;
-    height: 40px;
-}
-
-.field {
-    border: 0;
-    width: 200px;
-    height: 20px;
-    padding: 10px 20px;
-}
-
-.field:focus {
-    outline: none;
-    box-shadow: 0px 9px 20px rgba(#4B4848, 0.3);
-}
-
-.search {
-    padding-left: 45%;
-}
-
 main {
     padding-top: 100px;
 }
@@ -119,10 +98,6 @@ main {
         height: 60%;
         padding-right: 5%;
     }
-
-    .search {
-        padding-left: 25%;
-    }
 }
 
 @media (max-width: 880px) {
@@ -136,16 +111,6 @@ main {
     #iconUser {
         height: 60%;
         padding-right: 5%;
-    }
-
-    .search {
-        padding-left: 15%;
-    }
-}
-
-@media (max-width: 750px) {
-    .search {
-        padding-left: 0%;
     }
 }
 
@@ -164,8 +129,11 @@ main {
 @media (max-width: 480px) {
     header {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        padding-left: 2%;
+        padding-right: 2%;
         height: auto;
+        position: relative;
     }
 
     #logo {
@@ -174,12 +142,18 @@ main {
         padding-left: 0;
     }
 
-    .search {
-        display: none;
+    #theme-toggle {
+        width: 40px; 
+        height: 40px;
+        position: absolute;
+        top: 10px; 
+        right: 10px;
+        cursor: pointer;
     }
 
-    #theme-toggle {
-        display: none;
+    #theme-icon {
+        width: 25px;
+        display: inline;
     }
 
     .iframe-desktop {
@@ -201,10 +175,6 @@ main {
 
     .title {
         font-size: 30px;
-    }
-
-    #theme-icon {
-        display: none;
     }
 }
 
