@@ -48,11 +48,6 @@ header {
     cursor: pointer;
 }
 
-#iconUser {
-    height: 60%;
-    padding-right: 5%;
-}
-
 /* Estilo para o botão de alternância de tema */
 .toggle-button {
     background-color: transparent;
@@ -68,17 +63,17 @@ main {
 
 #graphics {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 20px;
-    gap: 70px;
-    padding-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .title {
     margin-bottom: 25px;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 #theme-icon {
@@ -86,6 +81,22 @@ main {
     margin-right: 40px;
 }
 
+#form-button {
+    background-color: #4EB369;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+/* Media Query */
 @media (max-width: 1400px) {
     #logo {
         width: 271px;
@@ -170,6 +181,7 @@ main {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        height: 70%;
         margin-top: -20px;
     }
 
@@ -186,9 +198,11 @@ main {
 
     .iframe-mobile {
         display: block;
-        width: 100%;
-        height: 700px;
         border: none;
+    }
+
+    #form-button{
+        margin-left: 30%;
     }
 }
 
@@ -199,8 +213,6 @@ main {
  
     .iframe-desktop {
         display: block;
-        width: 75%;
-        height: 700px;
         border: none;
     }
 }
