@@ -93,6 +93,9 @@ main {
     text-align: center;
     text-decoration: none;
     margin-bottom: 100px;
+}
+
+#form-a{
     margin-left: 100px;
 }
 
@@ -201,7 +204,7 @@ main {
         border: none;
     }
 
-    #form-button{
+    #form-a{
         margin-left: 30%;
     }
 }
