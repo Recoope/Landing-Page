@@ -855,6 +855,7 @@ ul{
   }
  
 }
+
 .hamburger {
   display: none;
   border: none;
@@ -863,17 +864,7 @@ ul{
   cursor: pointer;
 }
 
-.hamburger::after,
-.hamburger::before {
-  content: " ";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: black;
-  margin-top: 5px;
-  position: relative;
-  transition: 0.3s;
-}
+
   
 @media (max-width: 750px) {
   .hamburger {
@@ -887,7 +878,7 @@ ul{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #a5c;
+    background: var(--secondary-color);
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
 
@@ -968,4 +959,49 @@ ul{
   background-color: var(--secondary-color); /* azul escuro pro hover */
   transform: scale(1.1);
   
+}
+.btn-restrita {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; 
+  color: #34A853;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s; 
+  font-family: "Poppins";
+  font-weight: 600;
+  z-index: 1;
+
+}
+
+.btn-restrita:hover {
+  background-color: #363636;
+  color: white;
+}
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+
+
+
+.nav__links.active {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 20px;
+
+
+
+
 }

@@ -21,7 +21,8 @@
       <div class="nav__logo">
         <a href="#"><img src="/components/images/logo_recoope_png.png" alt="logo" /></a>
       </div>
-      <button class="hamburger"></button>
+      <button class="hamburger"><span>☰</span></button>
+      
       <ul class="nav__links">
         <li class="link"><a href="#">Inicio</a></li>
         <li class="link"><a href="#informacoes">Informações</a></li>
@@ -39,7 +40,7 @@
         <p>
           Negocie materiais recicláveis de forma simples e sustentável em nossos leilões.
         </p>
-        <button class="btn">Comece agora</button>
+        <a href="" class="btn">Comece agora</a>
       </div>
       <div class="header__image">
         <img src="/components/images/logo101.png" alt="header" />
@@ -47,8 +48,9 @@
     </header>
     <div id="voltarTopo">
       <a href="#" id="subir"><img src="/components/images/seta-para-cima.png" alt=""></a>
-      
     </div>
+    <a href="fazerLogin.html" class="btn-restrita">Área Restrita</a>
+
     <section class="section__container explore__container" id="informacoes">
       <div class="explore__header">
         <h2 class="section__header">PORQUE UTILIZAR O RECOOPE?</h2>
@@ -169,7 +171,6 @@
             <ul>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Política de privacidade</a></li>
-              <li><a href="fazerLogin.html">Área restrita</a></li>
 
             </ul>
           </div>
@@ -192,5 +193,14 @@
         </div>
       </div>
    </footer>
+   <script>
+    const menuToggle = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav__links");
+
+    menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+   </script>
   </body>
 </html>
