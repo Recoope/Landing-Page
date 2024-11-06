@@ -33,7 +33,7 @@ toggleButton.addEventListener("click", () => {
 
 // Login Area Restrita
 function login(emailInput, passwordInput) {
-    const baseUrl = 'http://3.209.22.165';
+    const baseUrl = 'http://98.84.230.85';
     const url = baseUrl + '/home';
 
     const data = {
