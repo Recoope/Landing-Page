@@ -33,8 +33,8 @@ toggleButton.addEventListener("click", () => {
 
 // Login Area Restrita
 function login(emailInput, passwordInput) {
-    const baseUrl = 'https://recoopeapi.onrender.com';
-    const url = baseUrl + '/login';
+    const baseUrl = 'http://3.209.22.165';
+    const url = baseUrl + '/home';
 
     const data = {
         cnpjOuEmail: emailInput.value,
@@ -55,7 +55,6 @@ function login(emailInput, passwordInput) {
         if (response.status === 200) {
             return response.json();
         } else {
-            window.alert(JSON.stringify(response));
             throw new Error(`Erro na requisição: ${response.status}`);
         }
     })
@@ -65,6 +64,6 @@ function login(emailInput, passwordInput) {
     })
     .catch(error => {
         console.error('Houve um problema com a requisição:', error);
-        window.alert("Credenciais incorretas: " + JSON.stringify(error));
+        window.alert("Credenciais incorretas");
     });
 }
