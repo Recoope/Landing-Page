@@ -21,7 +21,6 @@ Um editor de código ou IDE com suporte para HTML e CSS (por exemplo, Visual Stu
 Clone o repositório para o seu ambiente local.
 ```
 git clone https://github.com/Recoope/Landing-Page.git
-
 ```
 
 Abra o projeto em seu editor de código favorito.
