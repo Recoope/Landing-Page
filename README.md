@@ -17,7 +17,7 @@ CSS: Estilização e layout.
 Para contribuir com o desenvolvimento ou personalização do site, é necessário:
 Um editor de código ou IDE com suporte para HTML e CSS (por exemplo, Visual Studio Code, Sublime Text).
 
-##🚀 Guia Rápido: Configurando e Personalizando o Projeto
+## 🚀 Guia Rápido: Configurando e Personalizando o Projeto
 Clone o repositório para o seu ambiente local.
 ```
 git clone https://github.com/Recoope/Landing-Page.git
